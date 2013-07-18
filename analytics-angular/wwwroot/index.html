@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>Topsy Pro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/app/assets/styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body ng-controller="MainController">
+        <x-topic-bar topic="model.topic"></x-topic-bar>
+        <x-filter-bar topic="model.topic"></x-filter-bar>
+        <x-tabs></x-tabs>
+        <div class="page-wrapper" ng-view ng-cloak></div>
+    </body>
+
+    <script type="text/javascript" src="/app/vendor/angular/angular.min.js"></script>
+    <script data-main="/app/main" src="/app/vendor/require.js"></script>
+
+</html>

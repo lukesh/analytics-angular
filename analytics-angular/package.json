@@ -1,0 +1,8 @@
+{
+    "name": "server",
+    "subdomain": "server",
+    "dependencies": {
+        "connect": "latest",
+        "send": "latest"
+    }
+}
