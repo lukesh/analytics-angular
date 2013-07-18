@@ -22,7 +22,7 @@ div.logo {
     text-indent: -999em;
 }
 
-x-topic-bar {
+div.topic-bar {
     display: block;
     position: absolute;
     top: 0;
@@ -31,18 +31,18 @@ x-topic-bar {
     height: 150px;
 }
 
-x-topic-bar ul.tags {
+div.topic-bar ul.tags {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-x-topic-bar li {
+div.topic-bar li {
     padding: 5px;
     display: inline-block;
 }
 
-x-filter-bar {
+div.filter-bar {
     display: block;
     position: absolute;
     top: 150px;
@@ -50,7 +50,7 @@ x-filter-bar {
     width: 200px;
 }
 
-x-tabs {
+div.tabs {
     display: block;
     position: absolute;
     top: 150px;

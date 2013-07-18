@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 
     <head>
         <meta charset="utf-8">
@@ -11,14 +8,15 @@
         <link href="/app/assets/styles/style.css" rel="stylesheet" type="text/css" />
     </head>
 
-    <body ng-controller="MainController">
+    <body id="ng-app" ng-app="Topsy" ng-controller="MainController">
         <div class="logo">Topsy</div>
-        <x-topic-bar topic="topic"></x-topic-bar>
-        <x-filter-bar topic="topic" available-date-ranges="constants.dateRanges"></x-filter-bar>
-        <x-tabs></x-tabs>
-        <div class="page-wrapper" ng-view ng-cloak></div>
+        <div topic-bar topic="topic"></div>
+        <div filter-bar topic="topic" available-date-ranges="constants.dateRanges"></div>
+        <div tabs></div>
+        <div class="page-wrapper" ng-view></div>
     </body>
 
+    <script type="text/javascript" src="/app/vendor/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/app/vendor/angular/angular.min.js"></script>
     <script type="text/javascript" src="/app/app.js"></script>
     <script type="text/javascript" src="/app/services/config.js"></script>
@@ -35,9 +33,8 @@
     <script type="text/javascript" src="/app/directives/topic_bar/topic_bar.js"></script>
     <script type="text/javascript" src="/app/directives/filter_bar/filter_bar.js"></script>
     <script type="text/javascript" src="/app/directives/tabs/tabs.js"></script>
-    <script type="text/javascript" src="/app/filters/filter.js"></script>
+    <script type="text/javascript" src="/app/filters/filters.js"></script>
     <script type="text/javascript" src="/app/vendor/moment.min.js"></script>
     <script type="text/javascript" src="/app/vendor/angular/keypress.js"></script>
-    <script type="text/javascript" src="/app/vendor/jquery-1.10.2.min.js"></script>
 
 </html>
