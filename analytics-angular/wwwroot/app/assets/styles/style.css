@@ -9,3 +9,60 @@ ul.tabs {
 ul.tabs li {
     display: inline-block;
 }
+
+div.logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 150px;
+    background: url('/app/assets/images/topsypro-white.svg') no-repeat center center;
+    background-size: 144px 25px;
+    text-indent: -999em;
+}
+
+x-topic-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 150px;
+}
+
+x-topic-bar ul.tags {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+x-topic-bar li {
+    padding: 5px;
+    display: inline-block;
+}
+
+x-filter-bar {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 200px;
+}
+
+x-tabs {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    right: 0;
+}
+
+div.page-wrapper {
+    display: block;
+    position: relative;
+
+    margin-top: 200px;
+    margin-left: 200px;
+}
+

@@ -20,7 +20,9 @@ require([
 
     'filters/filters',
 
-    'vendor/moment.min'
+    'vendor/moment.min',
+    'vendor/angular/keypress',
+    'vendor/jquery-1.10.2.min'
 ], function() {
     angular.bootstrap(document.getElementsByTagName('body')[0], ['Topsy'])
 })

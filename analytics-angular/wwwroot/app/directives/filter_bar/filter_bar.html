@@ -1,4 +1,7 @@
-Filter Bar
-<ul>
-    <li ng-repeat="tag in topic.tags">{{ tag }}</li>
-</ul>
+<h1>Filter bar</h1>
+
+<select 
+    ng-model="topic.dateRange"
+    ng-options="option.name for option in availableDateRanges"
+    >
+</select>

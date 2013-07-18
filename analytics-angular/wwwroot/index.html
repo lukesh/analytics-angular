@@ -12,13 +12,32 @@
     </head>
 
     <body ng-controller="MainController">
-        <x-topic-bar topic="model.topic"></x-topic-bar>
-        <x-filter-bar topic="model.topic"></x-filter-bar>
+        <div class="logo">Topsy</div>
+        <x-topic-bar topic="topic"></x-topic-bar>
+        <x-filter-bar topic="topic" available-date-ranges="constants.dateRanges"></x-filter-bar>
         <x-tabs></x-tabs>
         <div class="page-wrapper" ng-view ng-cloak></div>
     </body>
 
     <script type="text/javascript" src="/app/vendor/angular/angular.min.js"></script>
-    <script data-main="/app/main" src="/app/vendor/require.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/services/config.js"></script>
+    <script type="text/javascript" src="/app/services/api.js"></script>
+    <script type="text/javascript" src="/app/views/main.js"></script>
+    <script type="text/javascript" src="/app/views/dashboard/dashboard.js"></script>
+    <script type="text/javascript" src="/app/views/activity/activity.js"></script>
+    <script type="text/javascript" src="/app/views/discovery/discovery.js"></script>
+    <script type="text/javascript" src="/app/views/exposure/exposure.js"></script>
+    <script type="text/javascript" src="/app/views/geography/geography.js"></script>
+    <script type="text/javascript" src="/app/views/influencers/influencers.js"></script>
+    <script type="text/javascript" src="/app/views/sentiment/sentiment.js"></script>
+    <script type="text/javascript" src="/app/views/top_results/top_results.js"></script>
+    <script type="text/javascript" src="/app/directives/topic_bar/topic_bar.js"></script>
+    <script type="text/javascript" src="/app/directives/filter_bar/filter_bar.js"></script>
+    <script type="text/javascript" src="/app/directives/tabs/tabs.js"></script>
+    <script type="text/javascript" src="/app/filters/filter.js"></script>
+    <script type="text/javascript" src="/app/vendor/moment.min.js"></script>
+    <script type="text/javascript" src="/app/vendor/angular/keypress.js"></script>
+    <script type="text/javascript" src="/app/vendor/jquery-1.10.2.min.js"></script>
 
 </html>

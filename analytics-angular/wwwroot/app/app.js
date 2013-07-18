@@ -6,7 +6,8 @@
             'Topsy.services', 
             'Topsy.filters',
             'Topsy.directives',
-            'Topsy.views'
+            'Topsy.views',
+            'ui.keypress'
         ])
         .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         

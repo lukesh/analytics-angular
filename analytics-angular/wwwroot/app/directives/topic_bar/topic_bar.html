@@ -1,3 +1,9 @@
+<h1>Topic bar</h1>
+
 <div>
-    <input></input>
+    <input ng-model="model.newTag" ui-keypress="{enter:'addNewTag()'}"></input>
 </div>
+<ul class="tags">
+    <li ng-repeat="tag in topic.tags">{{ tag }} <button ng-click="removeTag(tag)">x</button></li>
+</ul>
+<div>Date range selected: {{ topic.dateRange.value }}</div>

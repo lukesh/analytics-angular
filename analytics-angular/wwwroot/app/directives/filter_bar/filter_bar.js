@@ -7,7 +7,8 @@
             transclude: false,
             templateUrl: '/app/directives/filter_bar/filter_bar.html',
             scope: {
-                topic: '=topic'
+                topic: '=topic',
+                availableDateRanges: '=availableDateRanges'
             },
             link: function($scope, el, attrs) {
                 
